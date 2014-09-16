@@ -1,0 +1,50 @@
+date: displays the date: Aug 27 17:43:23 UTC 2014
+
+ls -ltr displays the base files of my directories and the time (second of day) and date of last time I edited the directory
+
+cd .. lists next directory path one level up from current level <comeauc@csel-cls-07:home/c$>
+
+pwd: working directory, gives the path of the current directory
+
+who: gives who is logged onto the system, apparently I am logged on three times
+
+whoami: gives my username
+
+man man: brings up the manual
+
+------------------------------------------------------------
+
+definitions from <www.computerhope.com/unix/>
+mkdir: makes a directory within the working directory
+mv: moves or renames a directory, so long as it is within sight of working directory
+cd ~ : changes to the root directory, which is limited on school computers
+cp: makes a copy of a file or directory
+rm: removes the named directory or file, though you must do rm -rf directoryName to remove a directory, a safeguard to make sure you don't accidently delete a whole bunch of stuff
+rmdir: is another way to remove a directory
+less: allows you to view the contents of a text file in the command line
+head: lets you see the first ten lines of a text file
+tail: lets you see the last ten lines of a text file
+grep: looks for specific text within files in the directory specified by user, to execute must do  grep -rl "the"  which is recursive linguistic
+find a specified file's path is find $PWD -type f | grep "books.txt"
+zip -r dir.zip csci3308
+to unzip, and spill all subdirectories into current directory do unzip -j filename.fileextension
+to tar ball a file, tar -cf tarfile.tar file1 file2
+to untar: tar -xvf dir.tar 
+stat filename.filenameextion lists the time characteristics about the file
+touch filename.filenameextion will update it to the current time
+
+sed: "stream editor", allows you to filter and transform text
+cat: "catenate" it reads data from files and outputs their contents
+sort: sorts the lines in a text file
+uniq: reports or filters out repeated lines in a file
+
+Part 5
+: sort the file based on the userid
+: sort the file based on the UID. Since it is a number, be sure to specify that it is a number so it sorts the numbers correctly
+: sort first based on the GID, then on UID
+: Show all the lines in the file with 'Marx' in it
+:  get the number of lines in the file (fom a unix command)
+: print just the usernames (hint: use awk)
+: print a unique list of GIDs (hint: use awk and pipe it to uniq)
+: use your anser from the previous question and now redirect the output to a file named 'tmp'
+ 
